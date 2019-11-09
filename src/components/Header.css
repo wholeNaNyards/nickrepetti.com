@@ -1,0 +1,31 @@
+.header {
+  text-align: center;
+}
+
+.header__image {
+  border-radius: 50%;
+}
+
+.header__name {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.header__caption {
+  color: #777;
+  font-size: 1.15rem;
+  font-weight: 300;
+  margin-top: 0;
+}
+
+@media only screen and (min-width : 992px) {
+  .header__name {
+    text-align: left;
+  }
+
+  .header__caption {
+    text-align: left;
+  }
+}
+

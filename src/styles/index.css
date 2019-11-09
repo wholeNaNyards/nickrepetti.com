@@ -1,0 +1,16 @@
+html {
+  font-size: 20px;
+}
+body {
+  color: #212529;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+}
+.main-container {
+  padding-top: 6rem;
+  margin-bottom: 50px;
+}

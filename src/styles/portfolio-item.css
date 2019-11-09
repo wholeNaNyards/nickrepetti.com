@@ -1,0 +1,61 @@
+.portfolio-item {
+  padding: 0 1em;
+}
+
+.portfolio-item__title {
+  margin: 0;
+  display: inline-block;
+  font-size: 1.1em;
+}
+
+.portfolio-item__link {
+  display: inline-block;
+  text-align: right;
+  float: right !important;
+}
+
+.portfolio-item__link:active {
+  text-decoration: none;
+}
+
+.portfolio-item__description {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.portfolio-item__image {
+  margin: 10px 0;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul.portfolio-item__tech-list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+ul.portfolio-item__tech-list li {
+  display: inline-block;
+  border-radius: 4px;
+  color: #777;
+  border: 1px solid #777;
+  padding: 0 1em;
+  margin: 6px 6px 0 0;
+  font-size: 0.75em;
+}
+
+a.githubLink {
+  border: 1px solid #b82617;
+  color: #b82617;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 0.75em;
+  font-weight: 300;
+  text-decoration: none;
+}
+
+a.githubLink:hover {
+  color: #fff;
+  background-color: #b82617;
+}

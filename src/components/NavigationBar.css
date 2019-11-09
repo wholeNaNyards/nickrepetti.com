@@ -1,0 +1,66 @@
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  height: 40px;
+  font-family: Rubik;
+  font-weight: 700;
+  line-height: 1.65em;
+  font-style: italic;
+  font-size: 1.25em;
+  color: #fff;
+}
+.logo:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.navBar {
+  background-color: #b82617;
+  color: #f2f0fd;
+  padding: 0.5em 1.25em;
+  margin-bottom: 1.25em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #a92315;
+  z-index: 1;
+}
+
+@media (min-width: 900px) {
+  .navBar {
+    padding: 0.5em 6em;
+  }
+}
+@media (min-width: 1200px) {
+  .navBar {
+    padding: 0.5em 12em;
+  }
+}
+
+.iconContainer {
+  float: right;
+  text-align: right;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.icon {
+  display: inline-block;
+  line-height: 40px; /* Same height of logo image, center vertically */
+}
+
+.icon a {
+  color: #f2f0fd;
+  padding-left: 1em;
+}
+
+.icon a:hover {
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.icon svg {
+  font-size: 1.375em;
+  vertical-align: middle;
+}
