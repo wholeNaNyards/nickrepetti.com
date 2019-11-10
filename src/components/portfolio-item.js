@@ -1,4 +1,5 @@
 import React from "react";
+import { Row, Col } from "react-bootstrap";
 
 import "../styles/portfolio-item.css";
 
@@ -14,12 +15,25 @@ const PortfolioItem = ({
   return (
     <div className="portfolio-item">
       <hr />
-      <h1 className="portfolio-item__title">{title}</h1>
-      {linkName && linkUrl && (
-        <a href={linkUrl} className="portfolio-item__link">
-          {linkName}
-        </a>
-      )}
+      <Row>
+        <Col xs={12} sm={6}>
+          <h1 className="portfolio-item__title">{title}</h1>
+        </Col>
+        {linkName && linkUrl && (
+          <div>
+            <Col xs={12} smHidden mdHidden lgHidden>
+              <a href={linkUrl} className="portfolio-item__link">
+                {linkName}
+              </a>
+            </Col>
+            <Col sm={6} xsHidden className="text-right">
+              <a href={linkUrl} className="portfolio-item__link">
+                {linkName}
+              </a>
+            </Col>
+          </div>
+        )}
+      </Row>
       <p className="portfolio-item__description">{description}</p>
       {media.map(item => {
         if (item.image) {

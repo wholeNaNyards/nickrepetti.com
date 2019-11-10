@@ -9,7 +9,7 @@
 }
 
 .portfolio-item__link {
-  float: right;
+  text-align: right;
 }
 
 .portfolio-item__link:active {
