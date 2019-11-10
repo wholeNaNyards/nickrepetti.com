@@ -6,9 +6,12 @@ import "../styles/portfolio.css";
 import Header from "./Header";
 import PortfolioItem from "./portfolio-item";
 
-import lfrImg from "../assets/lfr.gif";
+import lfrVideo from "../assets/lfr.mp4";
 import lfrAlert from "../assets/alert-example.png";
+import hbSalesVideo from "../assets/hb-sales-map.mp4";
+import wnyImg from "../assets/wholenanyardscom.png";
 import hbgmconfImg from "../assets/hb-gm-conf.png";
+import wnyChatImg from "../assets/wny-chat.png";
 import twitchDataCollectorImg from "../assets/twitch-data-collector.png";
 import ahMonitorImg from "../assets/ah-monitor.png";
 import electronicsStoreImg from "../assets/electronics-store.png";
@@ -46,43 +49,142 @@ const Portfolio = () => {
           <h3 className="portfolio-header">Check Out Some of My Projects</h3>
           <PortfolioItem
             title="Lookingforraid.io"
-            description="A web application to support the annual Habit Burger General Managers Conference."
+            description="Customizable recruitment alerter that notifies World of Warcraft guilds whenever a player is looking for a new guild. Sends a message to the given Discord channel, filtering out players who don't meet certain criteria. Each message contains relevant stats and info about each player, sourced from different APIs."
             linkName="lookingforraid.io"
             linkUrl="https://lookingforraid.io"
-            img={[lfrImg, lfrAlert]}
-            imgAlt="A portfolio image"
-            techList={["React", "Redux", "AWS", "DynamoDB"]}
-            githubUrl="https://github.com/nickrepetti/hb-gm-conf"
+            media={[
+              { video: lfrVideo },
+              { image: lfrAlert, alt: "Lookingforraid.io Discord Alert" }
+            ]}
+            techList={[
+              "Serverless",
+              "React",
+              "AWS",
+              "OAuth",
+              "API",
+              "Lambda",
+              "API Gateway",
+              "DynamoDB"
+            ]}
+            github={[
+              {
+                url: "https://github.com/wholeNaNyards/lookingforraid.io",
+                text: "View Frontend on GitHub"
+              },
+              {
+                url: "https://github.com/wholeNaNyards/lfr",
+                text: "View Backend on GitHub"
+              }
+            ]}
+          />
+          <PortfolioItem
+            title="Habit Burger Live Sales Map"
+            description="Live sales map for the Habit Burger Restaurants. For each new sale, based on type, a Pin is dropped on the map and the daily totals are updated. Map clears pins over time and resets all data every night at midnight."
+            media={[
+              {
+                video: hbSalesVideo
+              }
+            ]}
+            techList={[
+              "Data Visualization",
+              "Serverless",
+              "Google Maps API",
+              "React",
+              "AWS",
+              "API",
+              "Cognito",
+              "Lambda",
+              "API Gateway",
+              "DynamoDB"
+            ]}
+          />
+          <PortfolioItem
+            title="JAMstack Blog PWA"
+            description="Personal blog progressive web app, built with an emphasis on mobile performance, scoring a 92% or above on all Lighthouse metrics."
+            linkName="wholenanyards.com"
+            linkUrl="https://wholenanyards.com"
+            media={[{ image: wnyImg, alt: "Screenshot of wholenanyards.com" }]}
+            techList={["GatsbyJS", "PWA", "React", "GraphQL"]}
+            github={[
+              { url: "https://github.com/wholeNaNyards/wholenanyards.com" }
+            ]}
           />
           <PortfolioItem
             title="Habit Burger GM Conference"
-            description="A web application to support the annual Habit Burger General Managers Conference."
-            img={hbgmconfImg}
-            imgAlt="A portfolio image"
-            techList={["React", "Redux", "AWS", "DynamoDB"]}
-            githubUrl="https://github.com/nickrepetti/hb-gm-conf"
+            description="A web application to support the annual Habit Burger General Manager's Conference."
+            media={[
+              {
+                image: hbgmconfImg,
+                alt:
+                  "Screenshot of the website for the Habit Burger GM Conference"
+              }
+            ]}
+            techList={["React", "Redux", "AWS", "DynamoDB", "S3", "Cloudfront"]}
           />
           <PortfolioItem
-            title="twitch-data-collector"
+            title="Serverless Chat"
+            description="A real-time, 100% serverless chat application that uses WebSockets over AWS API Gateway."
+            linkName="chat.wholenanyards.com"
+            linkUrl="https://chat.wholenanyards.com"
+            media={[
+              { image: wnyChatImg, alt: "Screenshot of chat.wholenanyards.com" }
+            ]}
+            techList={[
+              "Serverless",
+              "WebSockets",
+              "React",
+              "AWS",
+              "Lambda",
+              "API Gateway",
+              "DynamoDB"
+            ]}
+            github={[
+              {
+                url: "https://github.com/wholeNaNyards/chat.wholenanyards.com",
+                text: "View Frontend on GitHub"
+              },
+              {
+                url: "https://github.com/wholeNaNyards/wny-chat",
+                text: "View Backend on GitHub"
+              }
+            ]}
+          />
+          <PortfolioItem
+            title="Twitch Data Collector"
             description="A serverless Node.js application that collects data from the Twitch API. Analysis is run to help streamers build up their viewer base.  Currently housed on AWS."
-            img={twitchDataCollectorImg}
-            imgAlt="A portfolio image"
+            media={[
+              {
+                image: twitchDataCollectorImg,
+                alt: "Screenshot of data being collected from Twitch"
+              }
+            ]}
             techList={["Node.js", "AWS", "PostgreSQL", "Serverless"]}
-            githubUrl="https://github.com/nickrepetti/twitch-data-collector"
+            github={[
+              { url: "https://github.com/nickrepetti/twitch-data-collector" }
+            ]}
           />
           <PortfolioItem
-            title="ah-monitor"
+            title="WoW Auction House Monitor"
             description="This application polls the World of Warcraft auction house and collects the data for the current auctions.  Will send a text message to notify when a specific auction falls below a threshold price."
-            img={ahMonitorImg}
-            imgAlt="A portfolio image"
+            media={[
+              {
+                image: ahMonitorImg,
+                alt:
+                  "Screenshot of Java code written for the WoW auction house monitor."
+              }
+            ]}
             techList={["Java", "MySQL"]}
-            githubUrl="https://github.com/nickrepetti/ah-monitor"
+            github={[{ url: "https://github.com/nickrepetti/ah-monitor" }]}
           />
           <PortfolioItem
-            title="electronics-store"
+            title="Electronics Store"
             description="A Spring/AngularJS bare-bones e-commerce web application."
-            img={electronicsStoreImg}
-            imgAlt="A portfolio image"
+            media={[
+              {
+                image: electronicsStoreImg,
+                alt: "Screenshot of a fake e commerce website."
+              }
+            ]}
             techList={[
               "Java",
               "Spring Framework",
@@ -91,7 +193,9 @@ const Portfolio = () => {
               "HTML",
               "CSS"
             ]}
-            githubUrl="https://github.com/nickrepetti/electronics-store"
+            github={[
+              { url: "https://github.com/nickrepetti/electronics-store" }
+            ]}
           />
         </Col>
       </Row>
