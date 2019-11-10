@@ -45,11 +45,11 @@
 
 .githubLink {
   border: 1px solid #b82617;
+  display: inline-block;
   color: #b82617;
   padding: 10px 15px;
   border-radius: 4px;
   font-size: 0.75em;
-  font-weight: 300;
   margin: 6px 6px 0 0;
 }
 
