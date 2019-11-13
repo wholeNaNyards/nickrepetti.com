@@ -8,13 +8,20 @@ import PortfolioItem from "./portfolio-item";
 
 import lfrVideo from "../assets/lfr.mp4";
 import lfrAlert from "../assets/alert-example.png";
+import lfrAlertWebP from "../assets/alert-example.webp";
 import hbSalesVideo from "../assets/hb-sales-map.mp4";
 import wnyImg from "../assets/wholenanyardscom.png";
+import wnyImgWebP from "../assets/wholenanyardscom.webp";
 import hbgmconfImg from "../assets/hb-gm-conf.png";
+import hbgmconfImgWebP from "../assets/hb-gm-conf.webp";
 import wnyChatImg from "../assets/wny-chat.png";
+import wnyChatImgWebP from "../assets/wny-chat.webp";
 import twitchDataCollectorImg from "../assets/twitch-data-collector.png";
+import twitchDataCollectorImgWebP from "../assets/twitch-data-collector.webp";
 import ahMonitorImg from "../assets/ah-monitor.png";
+import ahMonitorImgWebP from "../assets/ah-monitor.webp";
 import electronicsStoreImg from "../assets/electronics-store.png";
+import electronicsStoreImgWebP from "../assets/electronics-store.webp";
 
 const Portfolio = () => {
   return (
@@ -54,7 +61,11 @@ const Portfolio = () => {
             linkUrl="https://lookingforraid.io"
             media={[
               { video: lfrVideo },
-              { image: lfrAlert, alt: "Lookingforraid.io Discord Alert" }
+              {
+                image: lfrAlert,
+                webP: lfrAlertWebP,
+                alt: "Lookingforraid.io Discord Alert"
+              }
             ]}
             techList={[
               "Serverless",
@@ -103,7 +114,13 @@ const Portfolio = () => {
             description="Personal blog progressive web app, built with an emphasis on mobile performance, scoring a 92% or above on all Lighthouse metrics."
             linkName="wholenanyards.com"
             linkUrl="https://wholenanyards.com"
-            media={[{ image: wnyImg, alt: "Screenshot of wholenanyards.com" }]}
+            media={[
+              {
+                image: wnyImg,
+                webP: wnyImgWebP,
+                alt: "Screenshot of wholenanyards.com"
+              }
+            ]}
             techList={["GatsbyJS", "PWA", "React", "GraphQL"]}
             github={[
               { url: "https://github.com/wholeNaNyards/wholenanyards.com" }
@@ -115,6 +132,7 @@ const Portfolio = () => {
             media={[
               {
                 image: hbgmconfImg,
+                webP: hbgmconfImgWebP,
                 alt:
                   "Screenshot of the website for the Habit Burger GM Conference"
               }
@@ -127,7 +145,11 @@ const Portfolio = () => {
             linkName="chat.wholenanyards.com"
             linkUrl="https://chat.wholenanyards.com"
             media={[
-              { image: wnyChatImg, alt: "Screenshot of chat.wholenanyards.com" }
+              {
+                image: wnyChatImg,
+                webP: wnyChatImgWebP,
+                alt: "Screenshot of chat.wholenanyards.com"
+              }
             ]}
             techList={[
               "Serverless",
@@ -155,6 +177,7 @@ const Portfolio = () => {
             media={[
               {
                 image: twitchDataCollectorImg,
+                webP: twitchDataCollectorImgWebP,
                 alt: "Screenshot of data being collected from Twitch"
               }
             ]}
@@ -169,6 +192,7 @@ const Portfolio = () => {
             media={[
               {
                 image: ahMonitorImg,
+                webP: ahMonitorImgWebP,
                 alt:
                   "Screenshot of Java code written for the WoW auction house monitor."
               }
@@ -182,6 +206,7 @@ const Portfolio = () => {
             media={[
               {
                 image: electronicsStoreImg,
+                webP: electronicsStoreImgWebP,
                 alt: "Screenshot of a fake e commerce website."
               }
             ]}

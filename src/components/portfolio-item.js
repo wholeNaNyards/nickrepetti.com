@@ -39,12 +39,24 @@ const PortfolioItem = ({
         if (item.image) {
           return (
             <a href={item.image} key={item.image}>
-              <img
-                className="portfolio-item__image"
-                src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
-                data-src={item.image}
-                alt={item.alt}
-              />
+              <picture>
+                <source
+                  className="portfolio-item__image"
+                  type="image/webp"
+                  srcSet={item.webP}
+                />
+                <source
+                  className="portfolio-item__image"
+                  type="image/png"
+                  srcSet={item.image}
+                />
+                <img
+                  className="portfolio-item__image"
+                  data-src={item.image}
+                  src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs="
+                  alt={item.alt}
+                />
+              </picture>
             </a>
           );
         } else if (item.video) {
