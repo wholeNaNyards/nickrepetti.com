@@ -3,7 +3,8 @@
 }
 
 .header__image {
-  border-radius: 50%;
+  display: inline-block;
+  height: 20vh;
 }
 
 .header__name {
@@ -19,7 +20,7 @@
   margin-top: 0;
 }
 
-@media only screen and (min-width : 992px) {
+@media only screen and (min-width: 992px) {
   .header__name {
     text-align: left;
   }
@@ -28,4 +29,3 @@
     text-align: left;
   }
 }
-

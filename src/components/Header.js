@@ -3,13 +3,17 @@ import { Row, Col } from "react-bootstrap";
 
 import "./Header.css";
 
-import profilePic from "../assets/nick.jpg";
+import profilePic from "../assets/nick.jpeg";
 
 const Header = () => {
   return (
     <Row className="header">
       <Col md={4} mdOffset={1}>
-        <img className="header__image" src={profilePic} alt="Nick Repetti" />
+        <img
+          className="header__image img-responsive img-circle"
+          src={profilePic}
+          alt="Nick Repetti"
+        />
       </Col>
       <Col md={7}>
         <h1 className="header__name">Nick Repetti</h1>

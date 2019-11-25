@@ -27,7 +27,7 @@ const Portfolio = () => {
   return (
     <Grid fluid className="main-container">
       <Row>
-        <Col md={6} mdOffset={3}>
+        <Col md={6} mdOffset={3} xl={8} xlOffset={2}>
           <Header />
           <hr />
           <p className="portfolio-description">
