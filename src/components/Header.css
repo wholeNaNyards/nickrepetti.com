@@ -5,6 +5,7 @@
 .header__image {
   display: inline-block;
   height: 20vh;
+  max-height: 400px;
 }
 
 .header__name {
