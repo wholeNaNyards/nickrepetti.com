@@ -17,9 +17,7 @@ const Header = () => {
       </Col>
       <Col md={7}>
         <h1 className="header__name">Nick Repetti</h1>
-        <h2 className="header__caption">
-          <a href="https://twitter.com/wholeNaNyards">@wholeNaNyards</a>
-        </h2>
+        <h2 className="header__caption">@wholeNaNyards</h2>
         <h2 className="header__caption">
           Software Engineer{" "}
           <span role="img" aria-label="Programmer">

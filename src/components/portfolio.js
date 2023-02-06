@@ -32,24 +32,15 @@ const Portfolio = () => {
           <hr />
           <p className="portfolio-description">
             I'm Nick! I like to travel and create things on the web. I spend my
-            free time playing hockey and video games. I also sometimes write to
-            my <a href="https://wholenanyards.com">Blog</a>. Sometimes I do live
-            stream coding on my <a href="https://twitch.tv/NobuffTV">Twitch.</a>
+            free time playing hockey and video games.
             <br />
             <br />
-            I'm{" "}
-            <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=2&t=c&d=2018-12-27&ci=AWS00305929">
-              AWS Certified
-            </a>{" "}
-            and have a Bachelor's in Computer Engineering. These days I mainly
-            build things with Serverless and React, although I enjoy going out
-            of my comfort zone every now and then.
+            I'm AWS Certified and have a Bachelor's in Computer Engineering. I
+            love automation an all things Full Stack Javascript. I design
+            systems with high performance and scalability on the forefront.
             <br />
             <br />
-            DM me <a href="https://twitter.com/wholeNaNyards">
-              @wholeNaNyards
-            </a>{" "}
-            or shoot me an email at{" "}
+            Reach out to me at{" "}
             <a href="mailto:nickrepetti@gmail.com">nickrepetti@gmail.com</a> to
             get in touch.
           </p>
@@ -58,14 +49,13 @@ const Portfolio = () => {
             title="Lookingforraid.io"
             description="Customizable recruitment alerter that notifies World of Warcraft guilds whenever a player is looking for a new guild. Sends a message to the given Discord channel, filtering out players who don't meet certain criteria. Each message contains relevant stats and info about each player, sourced from different APIs."
             linkName="lookingforraid.io"
-            linkUrl="https://lookingforraid.io"
             media={[
               { video: lfrVideo },
               {
                 image: lfrAlert,
                 webP: lfrAlertWebP,
-                alt: "Lookingforraid.io Discord Alert"
-              }
+                alt: "Lookingforraid.io Discord Alert",
+              },
             ]}
             techList={[
               "Serverless",
@@ -75,17 +65,17 @@ const Portfolio = () => {
               "API",
               "Lambda",
               "API Gateway",
-              "DynamoDB"
+              "DynamoDB",
             ]}
             github={[
               {
                 url: "https://github.com/wholeNaNyards/lookingforraid.io",
-                text: "View Frontend on GitHub"
+                text: "View Frontend on GitHub",
               },
               {
                 url: "https://github.com/wholeNaNyards/lfr",
-                text: "View Backend on GitHub"
-              }
+                text: "View Backend on GitHub",
+              },
             ]}
           />
           <PortfolioItem
@@ -93,8 +83,8 @@ const Portfolio = () => {
             description="Live sales map for the Habit Burger Restaurants. For each new sale, based on type, a Pin is dropped on the map and the daily totals are updated. Map clears pins over time and resets all data every night at midnight."
             media={[
               {
-                video: hbSalesVideo
-              }
+                video: hbSalesVideo,
+              },
             ]}
             techList={[
               "Data Visualization",
@@ -106,24 +96,23 @@ const Portfolio = () => {
               "Cognito",
               "Lambda",
               "API Gateway",
-              "DynamoDB"
+              "DynamoDB",
             ]}
           />
           <PortfolioItem
             title="JAMstack Blog PWA"
             description="Personal blog progressive web app, built with an emphasis on mobile performance, scoring a 92% or above on all Lighthouse metrics."
             linkName="wholenanyards.com"
-            linkUrl="https://wholenanyards.com"
             media={[
               {
                 image: wnyImg,
                 webP: wnyImgWebP,
-                alt: "Screenshot of wholenanyards.com"
-              }
+                alt: "Screenshot of wholenanyards.com",
+              },
             ]}
             techList={["GatsbyJS", "PWA", "React", "GraphQL"]}
             github={[
-              { url: "https://github.com/wholeNaNyards/wholenanyards.com" }
+              { url: "https://github.com/wholeNaNyards/wholenanyards.com" },
             ]}
           />
           <PortfolioItem
@@ -133,23 +122,20 @@ const Portfolio = () => {
               {
                 image: hbgmconfImg,
                 webP: hbgmconfImgWebP,
-                alt:
-                  "Screenshot of the website for the Habit Burger GM Conference"
-              }
+                alt: "Screenshot of the website for the Habit Burger GM Conference",
+              },
             ]}
             techList={["React", "Redux", "AWS", "DynamoDB", "S3", "Cloudfront"]}
           />
           <PortfolioItem
             title="Serverless Chat"
             description="A real-time, 100% serverless chat application that uses WebSockets over AWS API Gateway."
-            linkName="chat.wholenanyards.com"
-            linkUrl="https://chat.wholenanyards.com"
             media={[
               {
                 image: wnyChatImg,
                 webP: wnyChatImgWebP,
-                alt: "Screenshot of chat.wholenanyards.com"
-              }
+                alt: "Screenshot of chat.wholenanyards.com",
+              },
             ]}
             techList={[
               "Serverless",
@@ -158,17 +144,17 @@ const Portfolio = () => {
               "AWS",
               "Lambda",
               "API Gateway",
-              "DynamoDB"
+              "DynamoDB",
             ]}
             github={[
               {
                 url: "https://github.com/wholeNaNyards/chat.wholenanyards.com",
-                text: "View Frontend on GitHub"
+                text: "View Frontend on GitHub",
               },
               {
                 url: "https://github.com/wholeNaNyards/wny-chat",
-                text: "View Backend on GitHub"
-              }
+                text: "View Backend on GitHub",
+              },
             ]}
           />
           <PortfolioItem
@@ -178,12 +164,12 @@ const Portfolio = () => {
               {
                 image: twitchDataCollectorImg,
                 webP: twitchDataCollectorImgWebP,
-                alt: "Screenshot of data being collected from Twitch"
-              }
+                alt: "Screenshot of data being collected from Twitch",
+              },
             ]}
             techList={["Node.js", "AWS", "PostgreSQL", "Serverless"]}
             github={[
-              { url: "https://github.com/nickrepetti/twitch-data-collector" }
+              { url: "https://github.com/nickrepetti/twitch-data-collector" },
             ]}
           />
           <PortfolioItem
@@ -193,9 +179,8 @@ const Portfolio = () => {
               {
                 image: ahMonitorImg,
                 webP: ahMonitorImgWebP,
-                alt:
-                  "Screenshot of Java code written for the WoW auction house monitor."
-              }
+                alt: "Screenshot of Java code written for the WoW auction house monitor.",
+              },
             ]}
             techList={["Java", "MySQL"]}
             github={[{ url: "https://github.com/nickrepetti/ah-monitor" }]}
@@ -207,8 +192,8 @@ const Portfolio = () => {
               {
                 image: electronicsStoreImg,
                 webP: electronicsStoreImgWebP,
-                alt: "Screenshot of a fake e commerce website."
-              }
+                alt: "Screenshot of a fake e commerce website.",
+              },
             ]}
             techList={[
               "Java",
@@ -216,10 +201,10 @@ const Portfolio = () => {
               "Angular 1",
               "H2 Database",
               "HTML",
-              "CSS"
+              "CSS",
             ]}
             github={[
-              { url: "https://github.com/nickrepetti/electronics-store" }
+              { url: "https://github.com/nickrepetti/electronics-store" },
             ]}
           />
         </Col>
