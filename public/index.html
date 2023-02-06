@@ -60,33 +60,7 @@
     />
   </head>
   <body>
-    <noscript>
-      You need to enable JavaScript to run this app.
-    </noscript>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
     <div id="root"></div>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-109183454-1"
-    ></script>
-    <script>
-      function init() {
-        var imgDefer = document.getElementsByTagName("img");
-        for (var i = 0; i < imgDefer.length; i++) {
-          if (imgDefer[i].getAttribute("data-src")) {
-            imgDefer[i].setAttribute(
-              "src",
-              imgDefer[i].getAttribute("data-src")
-            );
-          }
-        }
-      }
-      window.onload = init;
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "UA-109183454-1");
-    </script>
   </body>
 </html>
