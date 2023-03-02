@@ -10,7 +10,7 @@ const PortfolioItem = ({
   description,
   media,
   techList,
-  github
+  github,
 }) => {
   return (
     <div className="portfolio-item">
@@ -34,8 +34,11 @@ const PortfolioItem = ({
           </div>
         )}
       </Row>
-      <p className="portfolio-item__description">{description}</p>
-      {media.map(item => {
+      <p
+        className="portfolio-item__description"
+        dangerouslySetInnerHTML={{ __html: description }}
+      ></p>
+      {media.map((item) => {
         if (item.image) {
           return (
             <a href={item.image} key={item.image}>
@@ -77,12 +80,12 @@ const PortfolioItem = ({
         return null;
       })}
       <ul className="portfolio-item__tech-list">
-        {techList.map(tech => {
+        {techList.map((tech) => {
           return <li key={tech}>{tech}</li>;
         })}
       </ul>
       {github &&
-        github.map(item => {
+        github.map((item) => {
           return (
             <a className="githubLink" href={item.url} key={item.url}>
               {item.text ? item.text : "View on GitHub"}
