@@ -36,9 +36,9 @@ const Portfolio = () => {
             <span role="img" aria-label="Wave emoji">
               👋
             </span>{" "}
-            I'm Nick! I like to travel and create things on the web. I have a
-            passion for automation, and I've delivered software used by millions
-            of people worldwide.
+            I'm Nick! I like to travel and create things on the web. I've
+            delivered software used by millions of people, and love all things
+            automation!
             <br />
             <br />
             I'm AWS Certified, have a Bachelor of Science in Computer
