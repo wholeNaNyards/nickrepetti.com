@@ -36,9 +36,9 @@ const Portfolio = () => {
             <span role="img" aria-label="Wave emoji">
               👋
             </span>{" "}
-            I'm Nick! I like to travel and create things on the web. I've
-            delivered software used by millions of people, which autoscales to
-            handle 30 million requests per day.
+            I'm Nick! I like to travel and create things on the web. I have a
+            passion for automation, and I've delivered software used by millions
+            of people worldwide.
             <br />
             <br />
             I'm AWS Certified, have a Bachelor of Science in Computer
@@ -49,21 +49,16 @@ const Portfolio = () => {
             <a href="mailto:nickrepetti@gmail.com">nickrepetti@gmail.com</a> to
             get in touch.
           </p>
-          <h3 className="portfolio-header">
-            Check Out Some of My Side Projects
-          </h3>
+          <h3 className="portfolio-header">Some of My Side Projects</h3>
           <PortfolioItem
-            title="Emergent Behavoirs (AI)"
+            title="AI & Emergent Behavoirs"
             description="<a href='https://godotengine.org/'>Godot</a> is a video game engine, similar to Unreal or Unity.  This project is my Godot adaptation of some of the ideas found in the books <a href='https://www.oreilly.com/library/view/programming-game-ai/9781556220784/'>Programming Game AI by Example</a> and <a href='https://gameprogrammingpatterns.com/'>Game Programming Patterns</a>. It is written in GDScript, a language similar to Python.  All artwork was made by either me or my lovely wife.
             <br>
             <br>
-            Each AI behavior arises from simple rules, mostly based around manipulating Physics Vectors and performing efficient calculations. The project contains 6 examples in total.
-            <br>
-            <br>
-            In the following media, I've shown samples that highlight some of the AI patterns, specifically:
+            Here's some samples that highlight some of the AI patterns, specifically:
             <ul>
-            <li>Path Following w/ Obstacle Avoidance</li>
             <li>Emergent Behavoirs - Flocking</li>
+            <li>Path Following w/ Obstacle Avoidance</li>
             <li>Leader Following</li>
             </ul>
             "
@@ -134,8 +129,8 @@ const Portfolio = () => {
             ]}
           />
           <PortfolioItem
-            title="JAMstack Blog PWA"
-            description="Personal blog progressive web app, built with an emphasis on mobile performance, scoring a 92% or above on all Lighthouse metrics."
+            title="Blog Progressive Web App"
+            description="Personal blog progressive web app, built with an emphasis on mobile performance, scoring a 92% or above on all Lighthouse metrics. Uses Gatsby and JAMStack (JavaScript, APIs, and Markup)."
             linkName="wholenanyards.com"
             media={[
               {
